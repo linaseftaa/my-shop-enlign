@@ -465,107 +465,24 @@ header {
   background-color: var(--text-dark);
   color: var(--white);
 }
-
-@media (width < 900px) {
-  header {
-    margin-top: 5rem;
-  }
-
-  .sale__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .musthave__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-
-  .news__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .brands__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .instagram__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__bar {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .copyright {
-    text-align: center;
-  }
-
-  .footer__form {
-    justify-content: center;
-  }
-}
-
-@media (width < 600px) {
-  .nav__links {
-    display: none;
-  }
-
-  header {
-    margin-top: 0;
-  }
-
-  .header__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header__image {
-    display: none;
-  }
-
-  .sale__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .musthave__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .news__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .brands__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-.musthave__grid{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.musthave__grid img{
-  width: 400px;
-  height: 300px;
-  border: 2px solid black;
-  border-radius: 13px;
-  box-shadow: 4px 7px 7px 0px black;
+.musthave__card{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
   cursor: pointer;
-  margin: 10px;
-  transition: 400ms;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
 }
-.musthave__grid img:hover{
-  filter: grayscale(1);
-  transform: scale(1.03);
+musthave__card:hover{
+  box-shadow: 20px 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
-
-
-
+.musthave__card img{
+  width: 100%;
+  border-radius: 20px;
+}
 
 
 

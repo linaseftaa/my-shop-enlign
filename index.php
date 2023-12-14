@@ -16,8 +16,8 @@
     <nav class="section__container nav__container">
       <a href="#" class="nav__logo">Mon'sa</a>
       <ul class="nav__links">
-        <li class="link"><a href="#">HOME</a></li>
-        <li class="link"><a href="#">SHOP</a></li>
+        <li class="link"><a href="index.php">HOME</a></li>
+        <li class="link"><a href="shop.php">SHOP</a></li>
         <li class="link"><a href="#">PAGES</a></li>
         <li class="link"><a href="#">BLOG</a></li>
         <li class="link"><a href="#">LOOKBOOK</a></li>
