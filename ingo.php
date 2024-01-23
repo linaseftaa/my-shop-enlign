@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Threads Boutique</title>
+    <link rel="stylesheet" href="css/styleXX.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Trendy Threads Boutique</title>
-  </head>
-  <body>
-    <div class="header__bar">Free Shipping on Orders Over $50</div>
-    <nav class="section__container nav__container">
-      <a href="#" class="nav__logo">Mon'sa</a>
-      <ul class="nav__links">
-        <li class="link"><a href="index.php">HOME</a></li>
-        <li class="link"><a href="shop.php">SHOP</a></li>
-        <li class="link"><a href="#">PAGES</a></li>
-        <li class="link"><a href="#">BLOG</a></li>
-        <li class="link"><a href="#">LOOKBOOK</a></li>
-      </ul>
-      </nav>
-      <div class="nav__icons">
-      <div class="fas fa-bars" id="menu-bar"></div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <a href="#" id="logo">shopMe <span>.</span></a>
+        <nav class="navbar">
+        <a href="ingo.php">Home</a>
+        <a href="clothes.php">clothes</a>
+        <a href="#">Blog</a>
+       <a href="#">Contact</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-bar"></div>
             <div class="fas fa-shopping-cart" id="shop-cart"></div>
             <div class="fas fa-search" id="search-bar"></div>
-      </div>
-      <div class="search-box">
+           <a href="login.php" id="form-open"><div class="fas fa-user"id="form-open" id='login-form'onclick="document.getElementById('login-page').style.display='block'" style="width:auto;"></div></a> 
+        </div>
+
+        <div class="search-box">
             <input type="search" placeholder="search here">
         </div>
-    
-<!-- shoping cart -->
+        <!-- shoping cart -->
 
+        <div class="shopping-cart">
+            <div class="shopping-box">
+                <i class="fas fa-times"></i>
+                <img src="img/shirt1.png" alt="">
+                <div class="shop-content">
+                    <h3>online shopping</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">*</span>
+                    <span class="multiply">$3.00</span>
+                </div>
+            </div>
+            <div class="shopping-box">
+                <i class="fas fa-times"></i>
+                <img src="img/shirt1.png" alt="">
+                <div class="shop-content">
+                    <h3>online shopping</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">*</span>
+                    <span class="multiply">$3.00</span>
+                </div>
+            </div>
+            <div class="shopping-box">
+                <i class="fas fa-times"></i>
+                <img src="img/shirt1.png" alt="">
+                <div class="shop-content">
+                    <h3>online shopping</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">*</span>
+                    <span class="multiply">$3.00</span>
+                </div>
+            </div>
+        </div>
 
         <!-- shoping cart ended  -->
-    <header>
+
+    </div>
+    
+
+<header>
       <div class="section__container header__container">
         <div class="header__content">
           <p>EXTRA 55% OFF IN SPRING SALE</p>
@@ -50,7 +84,6 @@
         </div>
       </div>
     </header>
-
     <section class="section__container collection__container">
       <img src="img/imo.avif" alt="collection" />
       <div class="collection__content">
@@ -96,13 +129,7 @@
 
     <section class="section__container musthave__container">
       <h2 class="section__title">featured collection</h2>
-      <div class="musthave__nav">
-        <a href="#">ALL</a>
-        <a href="#">MAN</a>
-        <a href="#">WOMEN</a>
-        <a href="#">BAG</a>
-        <a href="#">SHOES</a>
-      </div>
+     
       <div class="musthave__grid">
         <div class="musthave__card">
           <img src="img/img4.jpg" alt="must have" />
@@ -276,14 +303,16 @@
         <p>Shoes</p>
       </div>
       <div class="footer__col">
-        <h4 class="footer__heading">INSTAGRAM</h4>
-        <div class="instagram__grid">
-          <img src="assets/instagram-1.jpg" alt="instagram" />
-          <img src="assets/instagram-2.jpg" alt="instagram" />
-          <img src="assets/instagram-3.jpg" alt="instagram" />
-          <img src="assets/instagram-4.jpg" alt="instagram" />
-          <img src="assets/instagram-5.jpg" alt="instagram" />
-          <img src="assets/instagram-6.jpg" alt="instagram" />
+        <h4 class="footer__heading">Our Social Network</h4>
+        <p>If you have any seggestions or inquiries, contact us througt our social Network
+          shown below
+        </p>
+        <div class="social-link">
+          <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-google-plus"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
     </footer>
@@ -304,8 +333,15 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+   
+    
+
