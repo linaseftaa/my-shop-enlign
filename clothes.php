@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy Threads Boutique</title>
     <link rel="stylesheet" href="css/shop.css">
+
     <!--link rel="stylesheet" href="cart.css"-->
      <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="styl.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -22,6 +24,7 @@
         <nav class="navbar">
         <a href="ingo.php">Home</a>
         <a href="clothes.php">clothes</a>
+        <a href="shop.php">clothes</a>
         <a href="#">Blog</a>
        <a href="#">Contact</a>
         </nav>
@@ -76,6 +79,7 @@
     
       <div class="musthave__nav">
         <a href="clothes.php">ALL</a>
+
         <a href="Dresses.php">Dresses</a>
         <a href="Sweaters.php">Sweaters</a>
         <a href="Pants.php">Pants</a>
@@ -125,6 +129,15 @@
     <a href="#">2</a>
     <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
 </section>
+
+
+        <a href="#">Gardigants</a>
+        <a href="#">Sweaters</a>
+        <a href="#">Woll pants</a>
+        <a href="#">Jachet</a>
+      </div>
+
+     
 
 
 
