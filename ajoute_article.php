@@ -49,7 +49,7 @@ if(isset($_POST['btn-ajouter'])){
 <?php
   if(isset($_POST['btn-ajouter'])){
       //connexion à la base de données
-      $con = mysqli_connect("localhost","root","","vetements");
+      $con = mysqli_connect("localhost","root","","clothes");
       //recupération des données du formulaire
       $titre = $_POST['titre'];
       $prix = $_POST['prix'];
@@ -58,7 +58,7 @@ if(isset($_POST['btn-ajouter'])){
     
       if(!empty($titre) && !empty($description)){
           //verifier si le produit existe déjà dans la base de données
-          $req1 = mysqli_query($con, "SELECT titre ,description,prix,categorie FROM produits WHERE titre ='$titre' AND description = '$description' AND prix='$prix' AND categorie='$cat'");
+          $req1 = mysqli_query($con, "SELECT titre ,descrip,prix,categorie FROM prod WHERE titre ='$titre' AND descrip = '$description' AND prix='$prix' AND categorie='$cat'");
           if(mysqli_num_rows($req1) > 0) {
               //si le produit existe déjà:
               $message = '<p style="color:red" >Le produit existe déjà</p>';
@@ -80,7 +80,7 @@ if(isset($_POST['btn-ajouter'])){
                   if($deplacer_image){
                       //si l'image a été déplacé :
                       //insérons le titre ,la description  et le nom de l'image dans la base de donnée 
-                      $req2 = mysqli_query($con,"INSERT INTO produits VALUES (NULL,'$titre','$description','$nouveau_nom_img','$prix','$cat')") ;
+                      $req2 = mysqli_query($con,"INSERT INTO prod VALUES (NULL,'$titre','$description','$prix','$nouveau_nom_img','$cat')") ;
                        if($req2){
                            //si les informations ont été inséré dans la base de données
                            $message = '<p style="color:green">Produit ajouté ! </p>';

@@ -37,6 +37,9 @@ pointer-events: auto;
 	background:rgba(0,0,0,0.3);
 	padding:10px;
     overflow: hidden;
+	/*
+	opacity: 0;
+	pointer-events: none;*/
 }
 .button-box
 {
@@ -108,7 +111,7 @@ pointer-events: auto;
 {
 	margin: 30px 10px 34px 0;
 }
-span
+.span
 {
 	color:#777;
 	font-size:12px;

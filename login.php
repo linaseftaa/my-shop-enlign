@@ -43,10 +43,12 @@
         </div>
     </div>
     <script>
+        /*
         const formOpenBtn = document.querySelector("#form-open"),
         let login-page= document.querySelector('.login-page');
        login-page = document.querySelector(".login-page"),
        formBox = document.querySelector(".form-box"),
+
        formColseBtn = document.querySelector(".form-box"),
        fasfauser = document.querySelector("#fas fa-user"),
        pWShowHide = document.querySelector(".input-field");
@@ -56,7 +58,7 @@
         form-box.classList.toggle('active')
 }
 
-
+*/
         var x=document.getElementById('login');
 		var y=document.getElementById('register');
 		var z=document.getElementById('btn');

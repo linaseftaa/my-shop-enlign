@@ -9,7 +9,7 @@
 
     <!--link rel="stylesheet" href="cart.css"-->
      <link rel="stylesheet" href="shop.css">
-    <link rel="stylesheet" href="styl.css">
+   <link rel="stylesheet" href="styl.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-
+</div>
         <!-- shoping cart ended  -->
 
     </div class="shopy">
