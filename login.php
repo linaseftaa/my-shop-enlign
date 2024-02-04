@@ -1,3 +1,51 @@
+<?php
+session_start();
+ $con = mysqli_connect("localhost","root","","clothes");
+
+if(isset($_SESSION['logged_in'])){
+    header('location:account.php');
+    exit;
+}
+
+
+ if(isset($_POST['login_btn'])){
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+   $stmt= $con->prepare("SELECT user_id, first_name,last_name,email,password FROM user WHERE email=? AND password=? LIMIT 1");
+ $stmt->bind_param('ss',$email,$password);
+ if($stmt->execute()){
+    $stmt->bind_result($user_id,$first_name,$last_name,$email,$password);
+    $stmt->store_result();
+    if($stmt->num_rows() == 1){
+     $row=$stmt->fetch();
+     $_SESSION['user_id'] = $user_id;
+     $_SESSION['first_name'] = $first_name;
+     $_SESSION['lasr_name'] = $last_name; 
+      $_SESSION['email'] = $email;
+      $_SESSION['logged_in'] = $true;
+      header('location:account.php?message=logged in sucessfully');
+    }else{
+        header('location:login.php?error=could not verify your account');   
+    }
+    }else {
+       header('location: login.php?error=something went wrong');
+
+    }
+ }
+
+
+
+
+
+
+
+
+?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -77,14 +125,19 @@
                     <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
                     <button type='button'onclick='register()'class='toggle-btn'>Register</button>
                 </div>
-                <form id='login' class='input-group-login' method="POST">
-                    <input type='text'class='input-field'placeholder='Email Id' required >
-		    <input type='password'class='input-field'placeholder='Enter Password' required>
+                <form id='login' class='input-group-login' method="POST" action="login.php">
+                <p style="color:red;" class="text-center"><?php if(isset($_GET['error'])){echo $_GET['error'];}?></p>
+                    <input type='text'class='input-field'name="email" placeholder=' Enter Your Email' required >
+		    <input type='password'class='input-field'name="password" placeholder='Enter Password' required>
 		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn'>Log in</button>
+		    <button type='submit'class='submit-btn' name="login_btn">Log in</button>
+            <div class="form-group">
+                <a href="register.php" id="register-url" class="btn">Dont't have account ? Register</a>
+
+            </div>
 		 </form>
 		 <form id='register' class='input-group-register' method="POST" action="register.php">
-            <p style="color:red;"><?php echo $_GET['error'];?></p>
+         <p style="color:red;"><?php if(isset($_GET['error'])){echo $_GET['error'];}?></p>
 		     <input type='text'class='input-field'name="firstname" placeholder='First Name' required>
 		     <input type='text'class='input-field'name="lastname" placeholder='Last Name ' required>
 		     <input type='email'class='input-field'name="email" placeholder='entre your Email ' required>

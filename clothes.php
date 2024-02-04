@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy Threads Boutique</title>
     <link rel="stylesheet" href="css/shop.css">
-
     <!--link rel="stylesheet" href="cart.css"-->
      <link rel="stylesheet" href="shop.css">
    <link rel="stylesheet" href="styl.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -24,7 +22,6 @@
         <nav class="navbar">
         <a href="ingo.php">Home</a>
         <a href="clothes.php">clothes</a>
-        <a href="shop.php">clothes</a>
         <a href="#">Blog</a>
        <a href="#">Contact</a>
         </nav>

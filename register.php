@@ -1,8 +1,10 @@
 <?php
 session_start();
  $con = mysqli_connect("localhost","root","","clothes");
-
-
+ if(isset($_SESSION['logged_in'])){
+    header('location:account.php');
+    exit;
+}
 
 if(isset($_POST['register'])){
     $firstname = $_POST['firstname'];
@@ -44,7 +46,7 @@ $_SESSION['email']=$email;
 $_SESSION['first_name'] = $firstname;
 $_SESSION['last_name'] = $lastname;
 $_SESSION['logged_in'] = true;
-header('location:register.php?register=you registered sucssfully');
+header('location:register.php?message=you registered sucssfully');
 //account could not created 
 }else{
 header('location:register.php?error=could not creat an account at the momente');
@@ -52,11 +54,9 @@ header('location:register.php?error=could not creat an account at the momente');
 
 }
 }
-//if user has already registered then take user to account page
-}else if(isset($_SESSION['logged_in'])){
-    header('location:account.php');
-    exit;
 }
+//if user has already registered then take user to account page
+
 
 ?>
 
@@ -148,6 +148,7 @@ header('location:register.php?error=could not creat an account at the momente');
                     <button type='button'onclick='register()'class='toggle-btn'>Register</button>
                 </div>
                 <form id='login' class='input-group-login'>
+                <p style="color:red;"><?php if(isset($_GET['error'])){echo $_GET['error'];}?></p>
                     <input type='text'class='input-field'placeholder='Email Id' required >
 		    <input type='password'class='input-field'placeholder='Enter Password' required>
 		    <input type='checkbox'class='check-box'><span>Remember Password</span>
