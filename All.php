@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy Threads Boutique</title>
-    <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="styl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -84,9 +84,9 @@
       <?php 
                  //Nous allons afficher tous les produits ajouté :
                    //connexion à la base de données
-                   $con = mysqli_connect("localhost","root","","vetements");
+                   $con = mysqli_connect("localhost","root","","clothes");
                    
-                   $req3 = mysqli_query($con , "SELECT * FROM produits");
+                   $req3 = mysqli_query($con , "SELECT * FROM prod");
                    if(mysqli_num_rows($req3) == 0){
                       //si la base de donnée ne contient aucun produit , alors affichons :
                       echo " Aucun produit trouvé";
@@ -99,7 +99,7 @@
                                         <img src="img/'.$row['image'].'" alt=""> 
                                         <div class="des">
                                            <strong><p class="titre">'.$row['titre'].'</p></strong>
-                                           <p class="prix">'.$row['prix'].'</p>
+                                           <p class="prix">'.$row['prix'].'</p><p class="descrip">'.$row['descrip'].'</p>
                                              <div class="star">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -108,7 +108,7 @@
                                                 <i class="fas fa-star"></i>
                                              </div>
                                         </div>
-                                      <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                                      <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
                                     </div>
                             </div>    
                            ';
@@ -120,7 +120,7 @@
      <section id="pagination" class="section-p1">
     <a href="#">1</a>
     <a href="#">2</a>
-    <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    <a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
 </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

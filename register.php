@@ -42,8 +42,11 @@ $stmt->bind_param('ssss',$firstname,$lastname,$email,md5($password));
 
 
  if($stmt->execute()){
+
 $user_id = $stmt->insert_id;
 $_SESSION['user_id'] = $user_id;
+
+
 $_SESSION['email']=$email;
 $_SESSION['first_name'] = $firstname;
 $_SESSION['last_name'] = $lastname;

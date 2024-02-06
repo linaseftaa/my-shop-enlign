@@ -9,6 +9,7 @@
     display: flex;
     margin-top: 100px;
 }
+<<<<<<< HEAD
 #prodetails .single-pro-img {
     width: 40%;
     margin-right: 50px;
@@ -17,10 +18,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+=======
+.small-img-group{
+
+    display:flex;
+    justify-content: space-between;
+    
+>>>>>>> 66affd16c274066ff31013f0d7b10204c79cd970
 }
+
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
+<<<<<<< HEAD
 }
 #prodetails .single-pro-details{
     width: 50%;
@@ -60,4 +70,8 @@
 }
 #prodetails .single-pro-details span{
     line-height: 25px;
+=======
+    
+   
+>>>>>>> 66affd16c274066ff31013f0d7b10204c79cd970
 }

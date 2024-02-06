@@ -86,12 +86,12 @@
       <?php 
                  //Nous allons afficher tous les produits ajouté :
                    //connexion à la base de données
-                   $con = mysqli_connect("localhost","root","","vetements");
+                   $con = mysqli_connect("localhost","root","","clothes");
                   // $req1 = mysqli_query($con , "SELECT nom_cat FROM categories");
                  //while( $row = mysqli_fetch_assoc($req1)){
                   // $categorie = $row['nom_cat']; 
 
-                   $req3 = mysqli_query($con, "SELECT * FROM produits WHERE categorie = 'Sweater'");
+                   $req3 = mysqli_query($con, "SELECT * FROM prod WHERE categorie = 'Sweater'");
 
                   
                    if(mysqli_num_rows($req3) == 0){

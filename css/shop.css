@@ -453,7 +453,49 @@ header {
   color: var(--text-dark);
 }
 
+.musthave__grid {
+  display:flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
 
+.musthave__card {
+  
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap:wrap;
+  margin-top: 12rem;
+  display: flex;
+  gap: 0.5rem;
+  color: var(--text-dark);
+  text-align:center;
+  width: 23%;
+  min-width:250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+
+}
+.musthave__card img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.musthave__card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.musthave__card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.musthave__card p del {
+  font-weight: 400;
+  color: var(--text-light);
+}
 
   
 
