@@ -115,7 +115,7 @@
                                                 <i class="fas fa-star"></i>
                                              </div>
                                         </div>
-                                      <a href="single.php"><i class="fas fa-shopping-cart cart"></i></a>
+                                      <a href="Single.php?product_id='.$row['id'].'"><i class=" fal fa-shopping-cart cart" aria-hidden="true"></i></a>
                                     </div>
                             </div>    
                            ';

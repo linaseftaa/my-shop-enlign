@@ -1,25 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
-*{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan',sans-serif;
+}*/
+#prodetails{
+    display: flex;
+    margin-top: 100px;
 }
-.small-img-group{
-font-size: 6rem;
-    display:flex;
-   /* justify-content: space-between;*/
-    flex-basis:30%;
+#prodetails .single-pro-img {
+    width: 40%;
+    margin-right: 50px;
 }
-.small-img-group .img-fluid img{
-    font-size: 23rem;
-    width: 25rem;
-    height: 6rem;
-
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 .small-img-col{
-    flex-basis: 10%;
+    flex-basis: 24%;
     cursor: pointer;
-    gap: 20rem;
-   
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 40px;
+    height: 90%;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px  0  20px  0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-top:10px ;
+}
+#prodetails .single-pro-details input{
+   width: 50px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10 px;
+}
+#prodetails .single-pro-details input:focus {
+    outline: none;
+
+}
+#prodetails .single-pro-details button{
+    width: 90px;
+    height: 44px;
+    margin-left: 10px;
+    background-color:#088178;
+    color:#fff ;
+    cursor: pointer;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
 }

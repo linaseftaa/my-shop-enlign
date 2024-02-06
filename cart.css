@@ -1,4 +1,4 @@
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,4 +16,85 @@
     position: absolute;
     bottom: 20px;
     right: 10px;
+}*/
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+
+}
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #088178;
+}
+.cart td{
+    padding: 10px 20px;
+}
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.cart  td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+.cart td a{
+    color: #088178;
+}
+.cart .remove-btn{
+    color: #088178;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+.cart .edit-btn{
+    color: #088178;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+.cart .product-info p{
+    margin: 3px;
+   
+
+}
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+}
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid #088178;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+}
+.checkout-btn{
+    background-color: #088178;
+    color: #fff;
 }

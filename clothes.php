@@ -7,7 +7,7 @@
     <title>Trendy Threads Boutique</title>
     <link rel="stylesheet" href="css/shop.css">
 
-    <!--link rel="stylesheet" href="cart.css"-->
+    <link rel="stylesheet" href="cart.css">
      <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="styl.css">
 
@@ -90,9 +90,9 @@
       <?php 
                  //Nous allons afficher tous les produits ajouté :
                    //connexion à la base de données
-                   $con = mysqli_connect("localhost","root","","clothes");
+                   $con = mysqli_connect("localhost","root","","vetements");
                    
-                   $req3 = mysqli_query($con , "SELECT * FROM prod");
+                   $req3 = mysqli_query($con , "SELECT * FROM produits");
                    if(mysqli_num_rows($req3) == 0){
                       //si la base de donnée ne contient aucun produit , alors affichons :
                       echo " Aucun produit trouvé";
@@ -113,7 +113,7 @@
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                              </div>
-                                             <a href="Single.php?product_id='.$row['id'].'"><i class="fas fa-shopping-cart shop"></i></a>
+                                             <a href="Single.php?product_id='.$row['id'].'"><i class="fas fa-shopping-cart cart" aria-hidden="true"></i></a>
                                         </div>
                                       
                                     </div>
